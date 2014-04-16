@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*! normalize.css v3.0.0 | MIT License | git.io/normalize */
+/* normalize.css v3.0.0 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
  * 2. Prevent iOS text size adjust after orientation change, without disabling
@@ -754,23 +754,47 @@ body {
 }
 
 .tags li {
-  -webkit-flex-basis: 80px;
-  -ms-flex-preferred-size: 80px;
-  flex-basis: 80px;
+  -webkit-flex-basis: 120px;
+  -ms-flex-preferred-size: 120px;
+  flex-basis: 120px;
+  position: relative;
   margin: 10px;
-  padding: 80px 20px;
-  background-color: #f7f7f7;
-  border: #ddd 1px solid;
+  padding: 80px 10px;
+  color: #423913;
   font-family: 'Source Sans Pro',sans-serif;
-  font-size: 22px;
+  font-size: 20px;
   cursor: pointer;
   text-align: center;
-  -webkit-transition: background-color .4s;
-  transition: background-color .4s;
+  -webkit-transition: all .4s .4s;
+  transition: all .4s .4s;
+}
+
+.tags li:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  z-index: -1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #e9e7df;
+  border: #fff 10px solid;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .4s;
+  transition: all .4s;
 }
 
 .tags .selected {
-  background-color: rgba(0, 0, 0, 0.2);
+  -webkit-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  transform: rotate(10deg);
+}
+
+.tags .selected:before {
+  border-width: 70px;
 }
 
 /* modal */
@@ -783,8 +807,8 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  -webkit-transition: opacity 1.5s .6s;
-  transition: opacity 1.5s .6s;
+  -webkit-transition: opacity 1.5s 1s;
+  transition: opacity 1.5s 1s;
 }
 
 .modal .content {
@@ -797,7 +821,6 @@ body {
   height: 90%;
   margin: auto;
   background-color: #fff;
-  border-radius: 5px;
 }
 
 .modal .content .inner {
@@ -808,7 +831,6 @@ body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  border-radius: 5px;
   overflow: auto;
 }
 
@@ -905,7 +927,7 @@ body {
  *
 ------------------------------------- */
 /* jquery.maximage */
-/*! Version: 2.0.73 (12-Oct-2012) */
+/* Version: 2.0.73 (12-Oct-2012) */
 .mc-hide-scrolls {
   overflow: hidden;
 }

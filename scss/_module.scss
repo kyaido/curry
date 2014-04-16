@@ -20,19 +20,36 @@
   align-content: flex-start;
 }
 .tags li {
-  flex-basis: 80px;
+  flex-basis: 120px;
+  position: relative;
   margin: 10px;
-  padding: 80px 20px;
-  background-color: #f7f7f7;
-  border: #ddd 1px solid;
+  padding: 80px 10px;
+  color: #423913;
   font-family: 'Source Sans Pro',sans-serif;
-  font-size: 22px;
+  font-size: 20px;
   cursor: pointer;
   text-align: center;
-  transition: background-color .4s;
+  transition: all .4s .4s;
+}
+.tags li:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  z-index: -1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #e9e7df;
+  border: #fff 10px solid;
+  box-sizing: border-box;
+  transition: all .4s;
 }
 .tags .selected {
-  background-color: rgba(0, 0, 0, .2);
+  transform: rotate(10deg);
+}
+.tags .selected:before {
+  border-width: 70px;
 }
 
 /* modal */
@@ -45,7 +62,7 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, .5);
-  transition: opacity 1.5s .6s;
+  transition: opacity 1.5s 1s;
 }
 .modal .content {
   position: fixed;
@@ -57,7 +74,6 @@
   height: 90%;
   margin: auto;
   background-color: #fff;
-  border-radius: 5px;
 }
 .modal .content .inner {
   width: 100%;
@@ -65,7 +81,6 @@
   padding: 50px;
   background-color: rgba(0, 0, 0, .1);
   box-sizing: border-box;
-  border-radius: 5px;
   overflow: auto;
 }
 .modal .content .introduce {
