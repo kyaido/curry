@@ -644,13 +644,23 @@ body {
   background: url(../img/bg.png);
 }
 
+.noize {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: url(../img/bg_noize01.png);
+}
+
 /* -------------------------------------
  * header
 ------------------------------------- */
 #header {
   clear: both;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 #headInner {
@@ -659,8 +669,16 @@ body {
   padding: 30px;
 }
 
+#header .hero {
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+}
+
 #header .explain {
-  font-size: 20px;
+  margin: 20px 0 0;
+  color: #fff;
+  font-size: 16px;
   text-align: center;
 }
 
@@ -739,9 +757,12 @@ body {
   -webkit-flex-basis: 80px;
   -ms-flex-preferred-size: 80px;
   flex-basis: 80px;
-  margin: 5px;
-  padding: 40px 20px;
-  border: rgba(0, 0, 0, 0.2) 1px solid;
+  margin: 10px;
+  padding: 80px 20px;
+  background-color: #f7f7f7;
+  border: #ddd 1px solid;
+  font-family: 'Source Sans Pro',sans-serif;
+  font-size: 22px;
   cursor: pointer;
   text-align: center;
   -webkit-transition: background-color .4s;
@@ -776,7 +797,7 @@ body {
   height: 90%;
   margin: auto;
   background-color: #fff;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .modal .content .inner {
@@ -787,7 +808,7 @@ body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  border-radius: 10px;
+  border-radius: 5px;
   overflow: auto;
 }
 
@@ -814,6 +835,25 @@ body {
   height: 600px;
 }
 
+.modal .content .images li {
+  position: relative;
+  float: left;
+  width: 12.5%;
+  height: 150px;
+  overflow: hidden;
+}
+
+.modal .content .images li img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 500px;
+  max-height: 500px;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
 /* modalOpen */
 .modalOpen .modal {
   opacity: 1;
@@ -821,12 +861,6 @@ body {
 }
 
 /* small */
-.modal.small .content {
-  background: url(../img/curry/punch.jpg) no-repeat 50% 50%;
-  -webkit-background-size: cover;
-  background-size: cover;
-}
-
 .modal.small .introduce:before {
   content: "麺もある";
 }
@@ -840,12 +874,6 @@ body {
 }
 
 /* medium */
-.modal.medium .content {
-  background: url(../img/curry/bondy.jpg) no-repeat 50% 50%;
-  -webkit-background-size: cover;
-  background-size: cover;
-}
-
 .modal.medium .introduce:before {
   content: "おいしいカレー";
 }
@@ -859,12 +887,6 @@ body {
 }
 
 /* large */
-.modal.large .content {
-  background: url(../img/curry/hungry.jpg) no-repeat 50% 50%;
-  -webkit-background-size: cover;
-  background-size: cover;
-}
-
 .modal.large .introduce:before {
   content: "よくばりなあなたにはハンバーグカレー";
 }
@@ -879,6 +901,37 @@ body {
 
 /* -------------------------------------
  *
- * style
+ * plugin
  *
 ------------------------------------- */
+/* jquery.maximage */
+/*! Version: 2.0.73 (12-Oct-2012) */
+.mc-hide-scrolls {
+  overflow: hidden;
+}
+
+body .mc-cycle {
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+div.mc-image {
+  -webkit-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+
+.mc-old-browser .mc-image {
+  overflow: hidden;
+}

@@ -12,6 +12,17 @@
 body {
   background: url(../img/bg.png);
 }
+
+.noize {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: url(../img/bg_noize01.png);
+}
+
 #wrapper {
 }
 
@@ -23,15 +34,22 @@ body {
 #header {
   clear: both;
   width: 100%;
-  background-color: rgba(255, 255, 255, .9);
+  background-color: rgba(0, 0, 0, .9);
 }
 #headInner {
   width: $contentsWidth;
   margin: 0 auto;
   padding: 30px;
 }
+#header .hero {
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+}
 #header .explain {
-  font-size: 20px;
+  margin: 20px 0 0;
+  color: #fff;
+  font-size: 16px;
   text-align: center;
 }
 

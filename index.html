@@ -19,10 +19,19 @@
 <script src="js/modernizr-2.7.1.min.js"></script>
 </head>
 <body>
+  
+<div id="maximage">
+  <img src="img/material/a0002_008169_m.jpg" alt="">
+  <img src="img/material/a0002_010827_m.jpg" alt="">
+  <img src="img/material/a1070_000115_m.jpg" alt="">
+</div>
+<div class="noize"></div>
+    
 <div id="wrapper">
   
   <header id="header" role="banner">
     <div id="headInner">
+      <h1 class="hero">TEAMLAB PRESENTS<br>コーダー飲み SPECIAL EDITION<br>TEAMLAB 周辺カレーMAP</h1>
       <p class="explain">好きなタグを3つ選んでください</p>
     </div>
     <!-- /header -->
@@ -155,13 +164,14 @@
     <div class="inner">
       <p class="introduce"></p>
       <p class="shop"></p>
+      <div class="images"></div>
       <p class="map">
         <!-- punch -->
-        <iframe src="https://mapsengine.google.com/map/u/0/embed?mid=zFON1m3Ks_Lo.k7gAZufpqyes" class="small"></iframe>
+        <!-- <iframe src="https://mapsengine.google.com/map/u/0/embed?mid=zFON1m3Ks_Lo.k7gAZufpqyes" class="small"></iframe> -->
         <!-- bondy -->
-        <iframe src="https://mapsengine.google.com/map/u/0/embed?mid=zFON1m3Ks_Lo.kbf54AUo4cEo" class="medium"></iframe>
+        <!-- <iframe src="https://mapsengine.google.com/map/u/0/embed?mid=zFON1m3Ks_Lo.kbf54AUo4cEo" class="medium"></iframe> -->
         <!-- hungry -->
-        <iframe src="https://mapsengine.google.com/map/u/0/embed?mid=zFON1m3Ks_Lo.keu547QRQkk0" class="large"></iframe>
+        <!-- <iframe src="https://mapsengine.google.com/map/u/0/embed?mid=zFON1m3Ks_Lo.keu547QRQkk0" class="large"></iframe> -->
       </p>
     </div>
   </div>
@@ -169,6 +179,14 @@
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
+<script src="js/jquery.cycle.all.min.js"></script>
+<script src="js/jquery.maximage.min.js"></script>
+<script type="text/javascript">
+$(function(){
+  // Trigger maximage
+  jQuery('#maximage').maximage();
+});
+</script>
 <script src="js/common.js"></script>
 </body>
 </html>

@@ -9,6 +9,7 @@
  * common module
 ------------------------------------- */
 
+
 /* tags */
 .tags {
   clear: both;
@@ -20,9 +21,12 @@
 }
 .tags li {
   flex-basis: 80px;
-  margin: 5px;
-  padding: 40px 20px;
-  border: rgba(0, 0, 0, .2) 1px solid;
+  margin: 10px;
+  padding: 80px 20px;
+  background-color: #f7f7f7;
+  border: #ddd 1px solid;
+  font-family: 'Source Sans Pro',sans-serif;
+  font-size: 22px;
   cursor: pointer;
   text-align: center;
   transition: background-color .4s;
@@ -53,7 +57,7 @@
   height: 90%;
   margin: auto;
   background-color: #fff;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 .modal .content .inner {
   width: 100%;
@@ -61,7 +65,7 @@
   padding: 50px;
   background-color: rgba(0, 0, 0, .1);
   box-sizing: border-box;
-  border-radius: 10px;
+  border-radius: 5px;
   overflow: auto;
 }
 .modal .content .introduce {
@@ -83,16 +87,27 @@
   width: 100%;
   height: 600px;
 }
+.modal .content .images li {
+  position: relative;
+  float: left;
+  width: 12.5%;
+  height: 150px;
+  overflow: hidden;
+}
+.modal .content .images li img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 500px;
+  max-height: 500px;
+  transform: translate(-50%, -50%);
+}
 /* modalOpen */
 .modalOpen .modal {
   opacity: 1;
   visibility: visible;
 }
 /* small */
-.modal.small .content {
-  background: url(../img/curry/punch.jpg) no-repeat 50% 50%;
-  background-size: cover;
-}
 .modal.small .introduce:before {
   content: "麺もある";
 }
@@ -103,10 +118,6 @@
   display: block;
 }
 /* medium */
-.modal.medium .content {
-  background: url(../img/curry/bondy.jpg) no-repeat 50% 50%;
-  background-size: cover;
-}
 .modal.medium .introduce:before {
   content: "おいしいカレー";
 }
@@ -117,10 +128,6 @@
   display: block;
 }
 /* large */
-.modal.large .content {
-  background: url(../img/curry/hungry.jpg) no-repeat 50% 50%;
-  background-size: cover;
-}
 .modal.large .introduce:before {
   content: "よくばりなあなたにはハンバーグカレー";
 }
