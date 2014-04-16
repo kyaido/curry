@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+/* -------------------------------------
+ *
+ * layout
+ *
+------------------------------------- */
+
+/* -------------------------------------
+ * page
+------------------------------------- */
+body {
+  background: url(../img/bg.png);
+}
+#wrapper {
+}
+
+
+
+/* -------------------------------------
+ * header
+------------------------------------- */
+#header {
+  clear: both;
+  width: 100%;
+  background-color: rgba(255, 255, 255, .9);
+}
+#headInner {
+  width: $contentsWidth;
+  margin: 0 auto;
+  padding: 30px;
+}
+#header .explain {
+  font-size: 20px;
+  text-align: center;
+}
+
+
+/* -------------------------------------
+ * main
+------------------------------------- */
+/* content */
+#content {
+  clear: both;
+  width: 100%;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+/* main */
+#main {
+  width: 100%;
+}
+
+
+
+/* -------------------------------------
+ * footer
+------------------------------------- */
+#footer {
+  clear: both;
+  width: 100%;
+  background-color: rgba(255, 255, 255, .9);
+}
+#footInner {
+  width: $contentsWidth;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+/* copyright */
+#copyright {
+  display: block;
+  text-align: center;
+}

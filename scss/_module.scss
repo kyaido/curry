@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+/* -------------------------------------
+ *
+ * module
+ *
+------------------------------------- */
+/* -------------------------------------
+ * common module
+------------------------------------- */
+
+/* tags */
+.tags {
+  clear: both;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+}
+.tags li {
+  flex-basis: 80px;
+  margin: 5px;
+  padding: 40px 20px;
+  border: rgba(0, 0, 0, .2) 1px solid;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color .4s;
+}
+.tags .selected {
+  background-color: rgba(0, 0, 0, .2);
+}
+
+/* modal */
+.modal {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .5);
+  transition: opacity 1.5s .6s;
+}
+.modal .content {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 90%;
+  height: 90%;
+  margin: auto;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.modal .content .inner {
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  background-color: rgba(0, 0, 0, .1);
+  box-sizing: border-box;
+  border-radius: 10px;
+  overflow: auto;
+}
+.modal .content .introduce {
+  color: #fff;
+  font-size: 26px;
+  font-weight: bold;
+}
+.modal .content .shop {
+  color: #fff;
+  font-size: 26px;
+  font-weight: bold;
+}
+.modal .content .map {
+  position: relative;
+  width: 100%;
+}
+.modal .content .map iframe {
+  display: none;
+  width: 100%;
+  height: 600px;
+}
+/* modalOpen */
+.modalOpen .modal {
+  opacity: 1;
+  visibility: visible;
+}
+/* small */
+.modal.small .content {
+  background: url(../img/curry/punch.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+.modal.small .introduce:before {
+  content: "麺もある";
+}
+.modal.small .shop:before {
+  content: "パンチマハル";
+}
+.modal.small iframe.small {
+  display: block;
+}
+/* medium */
+.modal.medium .content {
+  background: url(../img/curry/bondy.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+.modal.medium .introduce:before {
+  content: "おいしいカレー";
+}
+.modal.medium .shop:before {
+  content: "ボンディ";
+}
+.modal.medium iframe.medium {
+  display: block;
+}
+/* large */
+.modal.large .content {
+  background: url(../img/curry/hungry.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+.modal.large .introduce:before {
+  content: "よくばりなあなたにはハンバーグカレー";
+}
+.modal.large .shop:before {
+  content: "ハングリー味川";
+}
+.modal.large iframe.large {
+  display: block;
+}
