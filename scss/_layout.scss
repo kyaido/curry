@@ -45,23 +45,35 @@ body {
 }
 #headInner {
   position: relative;
-  width: $contentsWidth;
   height: 100%;
   margin: 0 auto;
-  padding: 100px 0 0;
+  padding: 50px 0 0;
   box-sizing: border-box;
   color: #fff;
   text-align: center;
 }
 #header .presents {
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: bold;
+  @include add-max-query($breakpoint) {
+    font-size: 1.5rem
+  }
+}
+#header .presents img {
+  @include add-max-query($breakpoint) {
+    width: 150px;
+    height: auto;
+  }
 }
 #header .hero {
   margin: 60px 0 0;
-  font-size: 60px;
+  font-size: 6rem;
   font-weight: bold;
-  line-height: 1;
+  line-height: 1.2;
+  @include add-max-query($breakpoint) {
+    margin: 30px 0 0;
+    font-size: 3.5rem;
+  }
 }
 #header .edittion {
   display: inline-block;
@@ -70,17 +82,13 @@ body {
   background-color: #000;
   border-radius: 30px;
   color: #e1d07f;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: bold;
   text-align: center;
-}
-#header .explain {
-  position: absolute;
-  left: 50%;
-  bottom: 50px;
-  transform: translateX(-50%);
-  font-size: 26px;
-  font-weight: bold;
+  @include add-max-query($breakpoint) {
+    padding: 15px 40px;
+    font-size: 1.5rem;
+  }
 }
 
 
@@ -93,6 +101,9 @@ body {
   width: 100%;
   padding: 50px;
   box-sizing: border-box;
+  @include add-max-query($breakpoint) {
+    padding: 50px 10px;
+  }
 }
 
 /* main */

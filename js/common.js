@@ -19,15 +19,14 @@ function initialize(shopLat, shopLng, zoom) {
   };
   var map = new google.maps.Map(document.getElementById('gmap'), myOptions);
   
-  //var image = 'img/lab_marker.png';
   var labMarker = new google.maps.Marker({
     position: labLatlng,
-    //icon: image,
+    icon: 'img/marker_lab.png',
     map: map
   });
   var shopMarker = new google.maps.Marker({
     position: shopLatlng,
-    //icon: image,
+    icon: 'img/marker_curry.png',
     map: map
   });
 }
@@ -36,7 +35,7 @@ function initialize(shopLat, shopLng, zoom) {
 // google image search
 function imageList(query) {
   var start = 0;
-  var end = 64;
+  var end = 16;
   var q = query;
   var googleApiUrl = 'http://ajax.googleapis.com/ajax/services/search/images?v=1.0&rsz=large&hl=ja&imgsz=medium';
   var addTarget = $('.modal .images');
