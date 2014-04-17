@@ -278,6 +278,39 @@
     font-size: 1.4rem;
   }
 }
+.modal .content .memberBox {
+  clear: both;
+  padding: 0 50px;
+  @include add-max-query($breakpoint) {
+    padding: 0 10px;
+  }
+}
+.modal .content .memberBox li {
+  float: left;
+  width: 25%;
+  text-align: center;
+  @include add-max-query($breakpoint) {
+    width: 50%;
+  }
+}
+.modal .content .memberBox li img {
+  width: 150px;
+  height: auto;
+  border: #fff 5px solid;
+  vertical-align: bottom;
+  @include add-max-query($breakpoint) {
+    width: 100px;
+  }
+}
+.modal .content .memberBox .talkwidthus {
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  border: #fff 5px solid;
+  box-sizing: border-box;
+  font-size: 2rem;
+  text-align: center;
+}
 
 /* modalOpen */
 .modalOpen .modal {
