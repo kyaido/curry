@@ -795,15 +795,15 @@ body {
 }
 
 .tags li {
-  -webkit-flex-basis: 120px;
-  -ms-flex-preferred-size: 120px;
-  flex-basis: 120px;
+  -webkit-flex-basis: 130px;
+  -ms-flex-preferred-size: 130px;
+  flex-basis: 130px;
   position: relative;
   margin: 10px;
   padding: 80px 10px;
   color: #423913;
   font-family: 'Source Sans Pro',sans-serif;
-  font-size: 20px;
+  font-size: 26px;
   cursor: pointer;
   text-align: center;
   -webkit-transition: all .4s .4s;
@@ -839,7 +839,7 @@ body {
 }
 
 .tags li.selected:before {
-  border-width: 70px;
+  border-width: 75px;
 }
 
 /* modal */
@@ -889,7 +889,7 @@ body {
   position: relative;
   float: left;
   width: 12.5%;
-  height: 150px;
+  height: 180px;
   -webkit-background-size: cover;
   background-size: cover;
   overflow: hidden;
@@ -898,8 +898,8 @@ body {
 .modal .content .introduction {
   position: relative;
   z-index: 2;
-  width: 274px;
-  height: 274px;
+  width: 260px;
+  height: 260px;
   margin: 50px;
   padding: 10px;
   background-color: #78681c;
@@ -1013,34 +1013,6 @@ body {
   visibility: visible;
 }
 
-/* small */
-/* .modal.small .introduce:before {
-  content: "麺もある";
-}
-.modal.small .shop:before {
-  content: "パンチマハル";
-} */
-/* medium */
-/* .modal.medium .introduce:before {
-  content: "おいしいカレー";
-}
-.modal.medium .shop:before {
-  content: "ボンディ";
-} */
-/* large */
-/* .modal.large .introduce:before {
-  content: "よくばりなあなたにはハンバーグカレー";
-}
-.modal.large .shop:before {
-  content: "ハングリー味川";
-} */
-/* five */
-/* .modal.five .introduce:before {
-  content: "HTML5なあなたは";
-}
-.modal.five .shop:before {
-  content: "ゴーゴーカレー";
-} */
 /* -------------------------------------
  *
  * plugin
