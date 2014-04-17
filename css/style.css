@@ -492,139 +492,6 @@ img {
  * helper
  *
 ------------------------------------- */
-/* text decolation */
-.textNormal {
-  font-weight: normal !important;
-}
-
-.textBold {
-  font-weight: bold !important;
-}
-
-.textUnderline {
-  text-decoration: underline !important;
-}
-
-.textNote {
-  padding-left: 1em;
-  text-indent: -1em;
-}
-
-/* element position */
-.elementLeft {
-  text-align: left !important;
-}
-
-.elementCenter {
-  text-align: center !important;
-}
-
-.elementRight {
-  text-align: right !important;
-}
-
-.elementTop {
-  vertical-align: top !important;
-}
-
-.elementMiddle {
-  vertical-align: middle !important;
-}
-
-.elementBottom {
-  vertical-align: bottom !important;
-}
-
-/* margin top */
-.mt0 {
-  margin-top: 0 !important;
-}
-
-.mt5 {
-  margin-top: 5px !important;
-}
-
-.mt10 {
-  margin-top: 10px !important;
-}
-
-.mt15 {
-  margin-top: 15px !important;
-}
-
-.mt20 {
-  margin-top: 20px !important;
-}
-
-.mt25 {
-  margin-top: 25px !important;
-}
-
-.mt30 {
-  margin-top: 30px !important;
-}
-
-.mt35 {
-  margin-top: 35px !important;
-}
-
-.mt40 {
-  margin-top: 40px !important;
-}
-
-.mt45 {
-  margin-top: 45px !important;
-}
-
-.mt50 {
-  margin-top: 50px !important;
-}
-
-/* margin bottom */
-.mb0 {
-  margin-bottom: 0 !important;
-}
-
-.mb5 {
-  margin-bottom: 5px !important;
-}
-
-.mb10 {
-  margin-bottom: 10px !important;
-}
-
-.mb15 {
-  margin-bottom: 15px !important;
-}
-
-.mb20 {
-  margin-bottom: 20px !important;
-}
-
-.mb25 {
-  margin-bottom: 25px !important;
-}
-
-.mb30 {
-  margin-bottom: 30px !important;
-}
-
-.mb35 {
-  margin-bottom: 35px !important;
-}
-
-.mb40 {
-  margin-bottom: 40px !important;
-}
-
-.mb45 {
-  margin-bottom: 45px !important;
-}
-
-.mb50 {
-  margin-bottom: 50px !important;
-}
-
 /* clearfix */
 .clearfix:after {
   content: "";
@@ -766,9 +633,6 @@ body {
  *
  * module
  *
-------------------------------------- */
-/* -------------------------------------
- * common module
 ------------------------------------- */
 /* tags */
 .tags {
@@ -1004,7 +868,7 @@ body {
 
 .modal .content .introBox .mapBox #gmap {
   width: 100%;
-  height: 300px;
+  height: 350px;
 }
 
 /* modalOpen */
@@ -1018,34 +882,3 @@ body {
  * plugin
  *
 ------------------------------------- */
-/* jquery.maximage */
-/*! Version: 2.0.73 (12-Oct-2012) */
-.mc-hide-scrolls {
-  overflow: hidden;
-}
-
-body .mc-cycle {
-  height: 100%;
-  left: 0;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: -1;
-}
-
-div.mc-image {
-  -webkit-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  height: 100%;
-  overflow: hidden;
-  width: 100%;
-}
-
-.mc-old-browser .mc-image {
-  overflow: hidden;
-}
