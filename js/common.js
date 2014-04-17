@@ -59,11 +59,7 @@ $(function() {
         if (200 === json.responseStatus) {
           var data = json.responseData.results;
           for (var i in data) {
-            var img = '<img src="' + data[i].url + '">';
-            $(img).error(function() {
-              img = '<img src="img/blank.gif">';
-            })
-            addDom.append('<li>' + img + '</li>');
+            addDom.append('<li style="background-image:url(' + data[i].url + ');"></li>');
           }
         }
       }
