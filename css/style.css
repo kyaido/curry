@@ -646,7 +646,9 @@ body {
 }
 
 body {
-  background: url(../img/bg.png);
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
 }
 
 .noise {
@@ -656,7 +658,7 @@ body {
   z-index: -1;
   width: 100%;
   height: 100%;
-  background: url(../img/bg_noize01.png);
+  background: url(../img/noise.png);
 }
 
 #wrapper {
@@ -826,13 +828,17 @@ body {
   transition: all .4s;
 }
 
+.tags li:hover:before {
+  border-width: 0;
+}
+
 .tags .selected {
   -webkit-transform: rotate(10deg);
   -ms-transform: rotate(10deg);
   transform: rotate(10deg);
 }
 
-.tags .selected:before {
+.tags li.selected:before {
   border-width: 70px;
 }
 
@@ -846,8 +852,8 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
-  -webkit-transition: opacity 1.5s 1s;
-  transition: opacity 1.5s 1s;
+  -webkit-transition: opacity 1.5s 1.2s;
+  transition: opacity 1.5s 1.2s;
 }
 
 .modal .content {
@@ -994,6 +1000,11 @@ body {
   font-size: 20px;
   font-weight: bold;
   text-align: center;
+}
+
+.modal .content .introBox .mapBox #gmap {
+  width: 100%;
+  height: 300px;
 }
 
 /* modalOpen */

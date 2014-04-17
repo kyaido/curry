@@ -20,13 +20,7 @@
 </head>
 <body>
   
-<div id="maximage">
-  <img src="img/material/a0002_008169_m.jpg" alt="">
-  <img src="img/material/a0002_010827_m.jpg" alt="">
-  <img src="img/material/a1070_000115_m.jpg" alt="">
-</div>
 <div class="noise"></div>
-    
 <div id="wrapper">
   
   <header id="header" role="banner">
@@ -172,7 +166,7 @@
           <p class="feature">お店の説明が入りますお店の説明が入りますお店の説明が入りますお店の説明が入りますお店の説明が入りますお店の説明が入りますお店の説明が入りますお店の説明が入りますお店の説明が入りますお店の説明が入りますお店の説明が入りますお店の説明が入ります</p>
         </div>
         <div class="mapBox">
-          <p class="map">map</p>
+          <div id="gmap">map</div>
         </div>
       </div>
       <div class="btnBox">
@@ -181,28 +175,19 @@
       </div>
     </div>
   </div>
+  <!-- /modal -->
 </div>
 
-<!-- <div class="modal">
-  <div class="content">
-    <div class="inner">
-      <p class="introduce"></p>
-      <p class="shop"></p>
-      <div class="images"></div>
-      <p class="map"></p>
-    </div>
-  </div>
-</div> -->
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
-<script src="js/jquery.cycle.all.min.js"></script>
-<script src="js/jquery.maximage.min.js"></script>
-<script type="text/javascript">
-$(function(){
-  // Trigger maximage
-  jQuery('#maximage').maximage();
-});
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery-2.1.0.min.js"><\/script>')</script>
+<script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+<script src="js/jquery.bgswitcher.js"></script>
+<script>
+$(function() {
+  $('body').bgswitcher({
+    images: ["img/material/a0002_008169_m.jpg", "img/material/a0002_010827_m.jpg", "img/material/a1070_000115_m.jpg"]
+  });
+})
 </script>
 <script src="js/common.js"></script>
 </body>

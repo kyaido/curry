@@ -34,10 +34,6 @@ $(function() {
 });
 
 
-
-
-
-
 $(function() {
   var start = 0;
   var end = 64;
@@ -68,3 +64,22 @@ $(function() {
   addTarget.append(addDom);
   
 });
+
+
+function initialize() {
+  var latlng = new google.maps.LatLng(35.705053, 139.756473);
+  var myOptions = {
+    zoom: 15,
+    center: latlng,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+  var map = new google.maps.Map(document.getElementById('gmap'), myOptions);
+  
+  //var image = 'img/lab_marker.png';
+  var labMarker = new google.maps.Marker({
+    position: latlng,
+    //icon: image,
+    map: map
+  });
+}
+initialize();
