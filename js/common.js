@@ -1,5 +1,13 @@
 
 
+// bgswitcher
+$(function() {
+  $('body').bgswitcher({
+    images: ["img/material/a0002_008169_m.jpg", "img/material/a0002_010827_m.jpg", "img/material/a1070_000115_m.jpg"]
+  });
+});
+
+
 // googlemap
 function initialize(shopLat, shopLng, zoom) {
   var labLatlng = new google.maps.LatLng(35.705053, 139.756473);
@@ -53,7 +61,7 @@ function imageList(query) {
       }
     });
   }
-  addTarget.append(addDom);
+  addTarget.html(addDom);
 }
 
 
@@ -104,6 +112,15 @@ $(function() {
       // modal open
       $('body').addClass('modalOpen');
     }
+    
+    $('.again').on('click', function(e) {
+      e.preventDefault();
+      point = 0;
+      item_select_count = 0;
+      item.removeClass('selected');
+      $('body').removeClass('modalOpen');
+      $('.modal .inner').scrollTop(0);
+    });
     
   });
 });

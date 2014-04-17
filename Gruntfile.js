@@ -38,7 +38,7 @@ module.exports = function (grunt) {
           cssDir: 'css',
           imagesDir: 'img',
           javascriptsDir: 'js',
-          outputStyle: 'expanded',
+          outputStyle: 'compressed',
           relativeAssets: true,
           noLineComments: true,
           debugInfo: false
@@ -48,7 +48,7 @@ module.exports = function (grunt) {
     
     autoprefixer: {
       options: {
-        browsers: ['last 2 version', 'Explorer >= 8', 'android 2.3']
+        browsers: ['last 2 version', 'android 2.3']
       },
       files: {
         expand: true,
