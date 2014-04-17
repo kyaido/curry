@@ -99,25 +99,3 @@ body {
 #main {
   width: 100%;
 }
-
-
-
-/* -------------------------------------
- * footer
-------------------------------------- */
-#footer {
-  clear: both;
-  width: 100%;
-  background-color: rgba(255, 255, 255, .9);
-}
-#footInner {
-  width: $contentsWidth;
-  margin: 0 auto;
-  padding: 30px;
-}
-
-/* copyright */
-#copyright {
-  display: block;
-  text-align: center;
-}
