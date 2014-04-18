@@ -2,11 +2,6 @@
 
 // bgswitcher
 $(function() {
-  $('body').bgswitcher({
-    images: ["img/curry01.jpg",
-             "img/curry02.jpg",
-             "img/curry03.jpg",
-             "img/curry04.jpg"]
   /*
     *Photo Credit
     https://www.flickr.com/photos/35034346243@N01/2284519526
@@ -14,7 +9,12 @@ $(function() {
     https://www.flickr.com/photos/grilledahi/414523045/
     https://www.flickr.com/photos/hyougushi/277097856/
   */
-  });
+   $.backstretch([
+    "img/curry01.jpg",
+    "img/curry02.jpg",
+    "img/curry03.jpg",
+    "img/curry04.jpg"
+    ], {duration: 4000, fade: 1500});
 });
 
 
