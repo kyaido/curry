@@ -22,9 +22,10 @@ $(function() {
 function initialize(shopLat, shopLng, zoom) {
   var labLatlng = new google.maps.LatLng(35.705053, 139.756473);
   var shopLatlng = new google.maps.LatLng(shopLat, shopLng);
+  var centerLatlng = new google.maps.LatLng(35.702474, 139.753579);
   var myOptions = {
     zoom: zoom,
-    center: labLatlng,
+    center: centerLatlng,
     mapTypeId: google.maps.MapTypeId.ROADMAP
   };
   var map = new google.maps.Map(document.getElementById('gmap'), myOptions);
@@ -75,7 +76,7 @@ function imageList(query) {
 
 
 $(function() {
-  var point = 0;
+  var point = 0; // max = 28?
   var item = $('.tags li');
   var item_select_count = 0; // max = 3
   var user_select;
@@ -96,14 +97,29 @@ $(function() {
       if(point === 5) {
         user_select = 'five';
       }
-      else if(point < 5) {
+      else if(point <= 4) {
+        user_select = 'minimum';
+      }
+      else if(point <= 7) {
+        user_select = 'exsmall';
+      }
+      else if(point <= 10) {
         user_select = 'small';
       }
-      else if(point < 10) {
+      else if(point <= 14) {
         user_select = 'medium';
       }
-      else {
+      else if(point <= 18) {
         user_select = 'large';
+      }
+      else if(point <= 22) {
+        user_select = 'exlarge';
+      }
+      else if(point <= 26) {
+        user_select = 'huge';
+      }
+      else {
+        user_select = 'maximum';
       }
       
       // create curry shop data
