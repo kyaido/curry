@@ -2,7 +2,7 @@
 
 // bgswitcher
 $(function() {
-  /*
+  /*!
     *Photo Credit
     https://www.flickr.com/photos/35034346243@N01/2284519526
     https://www.flickr.com/photos/potaufeu/11003842036/
