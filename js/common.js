@@ -3,7 +3,17 @@
 // bgswitcher
 $(function() {
   $('body').bgswitcher({
-    images: ["img/material/a0002_008169_m.jpg", "img/material/a0002_010827_m.jpg", "img/material/a1070_000115_m.jpg"]
+    images: ["img/curry01.jpg",
+             "img/curry02.jpg",
+             "img/curry03.jpg",
+             "img/curry04.jpg"]
+  /*
+    *Photo Credit
+    https://www.flickr.com/photos/35034346243@N01/2284519526
+    https://www.flickr.com/photos/potaufeu/11003842036/
+    https://www.flickr.com/photos/grilledahi/414523045/
+    https://www.flickr.com/photos/hyougushi/277097856/
+  */
   });
 });
 
