@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+/* -------------------------------------
+ *
+ * base
+ *
+------------------------------------- */
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.4rem;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
+  line-height: 1.5;
+  color: #333;
+}
+a:link {
+  color: #333;
+  text-decoration: none;
+}
+a:visited {
+  color: #333;
+  text-decoration: none;
+}
+a:hover,
+a:active,
+a:focus {
+  color: #333;
+  text-decoration: none;
+}
+
+label {
+  cursor: pointer;
+}
+img {
+  vertical-align: middle;
+}

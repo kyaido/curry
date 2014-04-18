@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+/* -------------------------------------
+ *
+ * layout
+ *
+------------------------------------- */
+
+/* -------------------------------------
+ * page
+------------------------------------- */
+html,
+body {
+  height: 100%
+}
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.noise {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: url(../img/noise.png);
+}
+
+#wrapper {
+  height: 100%
+}
+
+
+
+/* -------------------------------------
+ * header
+------------------------------------- */
+#header {
+  clear: both;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .6);
+}
+#headInner {
+  position: relative;
+  height: 100%;
+  margin: 0 auto;
+  padding: 50px 0 0;
+  box-sizing: border-box;
+  color: #fff;
+  text-align: center;
+}
+#header .presents {
+  font-size: 2rem;
+  font-weight: bold;
+  @include add-max-query($breakpoint) {
+    font-size: 1.5rem
+  }
+}
+#header .presents img {
+  @include add-max-query($breakpoint) {
+    width: 150px;
+    height: auto;
+  }
+}
+#header .hero {
+  margin: 60px 0 0;
+  font-size: 6rem;
+  font-weight: bold;
+  line-height: 1.2;
+  @include add-max-query($breakpoint) {
+    margin: 30px 0 0;
+    font-size: 3.5rem;
+  }
+}
+#header .edittion {
+  display: inline-block;
+  margin: 30px 0 0;
+  padding: 10px 80px;
+  background-color: #000;
+  border-radius: 30px;
+  color: #e1d07f;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  @include add-max-query($breakpoint) {
+    padding: 15px 40px;
+    font-size: 1.5rem;
+  }
+}
+
+
+/* -------------------------------------
+ * main
+------------------------------------- */
+/* content */
+#content {
+  clear: both;
+  width: 100%;
+  padding: 50px;
+  box-sizing: border-box;
+  @include add-max-query($breakpoint) {
+    padding: 50px 5px;
+  }
+}
+
+/* main */
+#main {
+  width: 100%;
+}
