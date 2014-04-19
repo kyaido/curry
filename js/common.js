@@ -76,7 +76,7 @@ function imageList(query) {
 
 
 $(function() {
-  var point = 0; // max = 28?
+  var point = 0; // max = 28
   var item = $('.tags li');
   var item_select_count = 0; // max = 3
   var user_select;
@@ -103,13 +103,13 @@ $(function() {
       else if(point <= 7) {
         user_select = 'exsmall';
       }
-      else if(point <= 10) {
+      else if(point <= 11) {
         user_select = 'small';
       }
-      else if(point <= 14) {
+      else if(point <= 15) {
         user_select = 'medium';
       }
-      else if(point <= 18) {
+      else if(point <= 19) {
         user_select = 'large';
       }
       else if(point <= 22) {
