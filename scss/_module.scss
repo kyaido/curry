@@ -123,6 +123,7 @@
   left: 0;
   width: 100%;
   height: 360px;
+  // background-color: #FCFF00;
   overflow: hidden;
   @include add-max-query($breakpoint) {
     height: 220px;
@@ -133,12 +134,21 @@
   float: left;
   width: 12.5%;
   height: 180px;
-  background-size: cover;
+  background: url(../img/lab_logo_small_alpha.png) no-repeat 50% 50%;
   overflow: hidden;
   @include add-max-query($breakpoint) {
     width: 50%;
     height: 110px;
   }
+}
+.modal .content .images li span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
 }
 .modal .content .introduction {
   position: relative;
