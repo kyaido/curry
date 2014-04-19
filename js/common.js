@@ -65,7 +65,7 @@ function imageList(query) {
         if (200 === json.responseStatus) {
           var data = json.responseData.results;
           for (var i in data) {
-            addDom.append('<li style="background-image:url(' + data[i].url + ');"></li>');
+            addDom.append('<li><span style="background-image:url(' + data[i].url + ');"></span></li>');
           }
         }
       }
